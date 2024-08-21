@@ -14,7 +14,7 @@ const links = ref([
       <span class="logo text-4xl">LUCAS RIBEIRO</span>
       <ul class="flex gap-3">
         <li v-for="(link, link_index) in links" :key="`${link_index}-link`">
-          <a href="" class="hover:text-primary-200 duration-300 uppercase">{{ link.name }}</a>
+          <a href="" class="hover:text-tertiary-500 duration-300 uppercase">{{ link.name }}</a>
         </li>
       </ul>
     </div>

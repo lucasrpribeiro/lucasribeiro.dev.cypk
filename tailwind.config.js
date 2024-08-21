@@ -28,6 +28,8 @@ module.exports = {
       secondary: {
         500: "#2be4ea",
         900: "#295459",
+      },
+      tertiary: {
         500: "#fed33f"
       }
     }
