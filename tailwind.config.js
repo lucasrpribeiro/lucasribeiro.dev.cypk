@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './components/**/*.{js,vue,ts}',
@@ -11,7 +10,26 @@ module.exports = {
   ],
 
   theme: {
-    extend: {},
+    colors: {
+      background: {
+        300: '#1e181e',
+        500: '#191a1e'
+      },
+      primary: {
+        200: "#f4908b",
+        300: "#ea6f69",
+        500: "#e8615a",
+        600: "#9c3230",
+        700: "#5e2122",
+        800: "#451717",
+        900: "#3c181a"
+      },
+      secondary: {
+        500: "#2be4ea",
+        900: "#295459",
+        500: "#fed33f"
+      }
+    }
   },
   plugins: [],
 }
