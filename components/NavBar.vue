@@ -9,7 +9,7 @@ const links = ref([
 
 <template>
   <nav class="relative container px-6 mx-auto flex items-center h-20">
-    <div class="absolute bottom-0 left-0 right-0 h-[2px] neon-border-red"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-[2px] neon-border-red"/>
     <div class="relative z-10 w-full flex items-center justify-between text-primary-500">
       <span class="logo text-4xl">LUCAS RIBEIRO</span>
       <ul class="flex gap-3">
