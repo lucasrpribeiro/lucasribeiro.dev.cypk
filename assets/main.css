@@ -1,3 +1,16 @@
+html,
+body {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  font-family: "VT323", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .neon-border-red {
   background: #e8615a;
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.3),
