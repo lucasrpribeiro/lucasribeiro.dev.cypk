@@ -16,3 +16,35 @@ body {
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.3),
     0 0 15px rgba(255, 0, 0, 0.2);
 }
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e8615a #3c181a;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e8615a;
+  border-radius: 40px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e8615a;
+  border-radius: 20px;
+  border: 3px solid #e8615a;
+}
+
+::selection {
+  background-color: #3c181a;
+  color: #fed33f;
+}
+
+::-moz-selection {
+  background-color: #3c181a;
+  color: #fed33f;
+}
