@@ -11,7 +11,7 @@
       <BaseButton>Entre_em_contato</BaseButton>
     </div>
     <div class="flex-1">
-      <img src="/assets/images/hero-desktop.png" alt="Foto da primeira seção" draggable="false">
+      <img src="/assets/images/hero-desktop.png" alt="Foto da primeira seção" draggable="false" class="hidden xl:block">
     </div>
   </div>
 </template>
