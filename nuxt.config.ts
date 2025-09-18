@@ -1,9 +1,17 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  css: ['@/assets/main.css'],
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/eslint"],
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
+  css: ['./app/assets/main.css'],
+  modules: ["@nuxtjs/google-fonts", "@nuxt/eslint"],
 
   googleFonts: {
     overwriting: true,
