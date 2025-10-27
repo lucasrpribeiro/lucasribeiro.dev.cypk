@@ -1,44 +1,22 @@
 @import "tailwindcss";
 
-@theme {
-  --color-white: #fff;
-  --color-background-300: #1e181e;
-  --color-background-500: #191a1e;
-  --color-primary-200: #f4908b;
-  --color-primary-300: #ea6f69;
-  --color-primary-500: #e8615a;
-  --color-primary-600: #9c3230;
-  --color-primary-700: #5e2122;
-  --color-primary-800: #451717;
-  --color-primary-900: #3c181a;
-  --color-secondary-500: #2be4ea;
-  --color-secondary-900: #295459;
-  --color-tertiary-500: #fed33f;
-}
-
 html,
 body {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .logo {
-  font-family: "VT323", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-style: normal;
-}
-
-.neon-border-red {
-  background: #e8615a;
-  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.3),
-    0 0 15px rgba(255, 0, 0, 0.2);
 }
 
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #e8615a #3c181a;
+  scrollbar-color: #fff #000;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -47,22 +25,39 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  background: #e8615a;
+  background: #000;
   border-radius: 40px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #e8615a;
+  background-color: #000;
   border-radius: 20px;
-  border: 3px solid #e8615a;
+  border: 3px solid #000;
 }
 
 ::selection {
-  background-color: #3c181a;
-  color: #fed33f;
+  background-color: #000;
+  color: #fff;
 }
 
 ::-moz-selection {
-  background-color: #3c181a;
-  color: #fed33f;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Terminal cursor animation */
+.terminal-cursor {
+  animation: terminal-blink 1s infinite;
+  color: #00ff00;
+}
+
+@keyframes terminal-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
