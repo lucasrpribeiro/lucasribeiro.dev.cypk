@@ -1,14 +1,14 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .logo {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
@@ -60,4 +60,33 @@ body {
   100% {
     opacity: 0;
   }
+}
+
+/* Shine effect reusable surface */
+.shine-surface {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-surface::after {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: -40%;
+  width: 45%;
+  height: 220%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-160%) rotate(25deg);
+  transition: transform 0.8s ease;
+  pointer-events: none;
+  filter: blur(24px);
+}
+
+.shine-surface:hover::after {
+  transform: translateX(320%) rotate(25deg);
 }
