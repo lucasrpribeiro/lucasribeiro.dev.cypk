@@ -1,4 +1,4 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -6,24 +6,21 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   vite: {
-    plugins: [
-      tailwindcss(),
-    ],
+    plugins: [tailwindcss()],
   },
   css: ['./app/assets/main.css'],
-  modules: ["@nuxtjs/google-fonts", "@nuxt/eslint"],
+  modules: ['@nuxtjs/google-fonts', '@nuxt/eslint'],
 
   googleFonts: {
     overwriting: true,
     families: {
-      'Rajdhani': {
+      Rajdhani: {
         wght: [400, 500, 600, 700, 800],
       },
-      'VT323': {
+      VT323: {
         wght: [400, 500, 600, 700, 800],
       },
     },
     display: 'swap',
   },
-
 })
